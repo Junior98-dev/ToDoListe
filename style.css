@@ -49,6 +49,7 @@
  .wrapper .screen{
     flex: 1;
     min-width: 100%;
+    transition: all 0.3s;
  }
  .screen-backdrop{
     width: 135%;
@@ -60,6 +61,7 @@
     background-color: #f9ea85;
     border-radius: 0 0 50% 50%;
     transform: translateX(-50%);
+    transition: all 0.3s;
  }
  .head-wrapper{
     padding: 0 30px;
