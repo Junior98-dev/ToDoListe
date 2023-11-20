@@ -27,6 +27,15 @@
     position: relative;
     display: flex;
  }
+ .wrapper.show-category .home-screen{
+    transform: translateX(-100%);
+ }
+ .wrapper.show-category .category-screen{
+    transform: translateX(-100%);
+ }
+ .wrapper.show-category .screen-backdrop{
+    transform: translate(-50%, -60%);
+ }
  
  @media (min-width:768px) {
     .wrapper{
