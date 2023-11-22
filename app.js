@@ -212,7 +212,10 @@ let tasks = [
   },
 ];
 
+let selectedCategory = categories[0];
 const categoriesContainer = document.querySelector(".categories");
+const categoryTitle = document.querySelector(".category-title");
+const categoryTasks = document.querySelector(".category-tasks");
 
 const renderCategories = () => {
   categoriesContainer.innerHTML = "";
@@ -225,6 +228,11 @@ const renderCategories = () => {
     //  create a div to render category
     const div = document.createElement("div");
     div.classList.add("category");
+    div.addEventListener("click", () => {
+      wrapper.classList.add("show-category");
+      selectedCategory = category;
+      categoryTitle.innerHTML = category.title;
+    });
     div.innerHTML = `
           <div class="left">
               <img src="images/${category.img}" alt="${category.title}">
